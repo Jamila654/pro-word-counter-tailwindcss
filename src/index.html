@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Word Counter</title>
+</head>
+<body class="bg-purple-800 sm:flex sm:items-center gap-8 mx-64">
+    <div class="title w-72 translate-y-28">
+        <h1 class="text-white text-5xl px-4 flex-nowrap translate-x-3">Total Words</h1>
+        <h1 class="text-5xl font-bold text-center text-orange-600 motion-safe:animate-pulse">Counter</h1>
+    </div>
+    <div class="container shadow-lg shadow-black translate-y-32 sm:flex sm:flex-col gap-2" style="width: 500px; height: 500px;">
+        <div><textarea class="px-2 py-2 rounded-sm" name="input-words" id="input-words" cols="55" rows="15"></textarea></div>
+        <div><button id="count-words-btn" class="click bg-orange-600 text-white text-2xl font-bold w-full h-10 hover:opacity-85 rounded-sm">Word Counter</button></div>
+        <div class="total-words translate-x-44 py-4 text-xl text-white">Total words: <span id="word-count">0</span></div>
+    </div>
+   <script src="./main.js"></script> 
+</body>
+</html>
